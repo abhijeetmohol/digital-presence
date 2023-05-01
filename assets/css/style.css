@@ -1,0 +1,232 @@
+:root{
+    --logo-cl:#f0022f ;
+    --hover:#ff3d00;
+    --jamstak:#4767f6;
+    --jamstak-expert:#eceef3;
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+header{
+    padding: 40px 0px 120px 0px;
+}
+.bg-red{
+    background: var(--logo-cl);
+}
+.bg-blue{
+    background:var(--jamstak);
+}
+.jam-expert{
+    background:var(--jamstak-expert) ;
+   
+}
+.red-box{
+    height:40px;
+    width:150px;
+}
+header ul{
+    width:50%;
+}
+.main-heading{
+    font-size: 3rem;
+}
+button:hover{
+   background-color: var(--hover);
+}
+.section-heading{
+    font-size: 2rem;
+}
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+}
+.morden-technology-text::after{
+    content: "";
+    width:3px;
+    height:200px;
+    background: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(50%, 10%);
+    background-image: url(../images/circle.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.one-stop-solution{
+    padding-bottom: 120px;
+    
+}
+.solution-text{
+    margin-top:250px
+}
+.jamstak {
+    font-size: 3.8rem;
+    line-height: 5rem;
+    padding: 30px 14px 30px 20px;
+}
+.jamstack-expert{
+    font-size: 2.5rem;
+    padding: 30px 10px 0px 0px;
+    letter-spacing: 0px;
+}
+.circle::before{
+    content: "";
+    display: inline-block;
+    margin-right:10px;
+    height: 25px;
+    width:25px;
+    background: url(../images/circle.png);
+    background-size:cover;
+}
+.square::before{
+    content: "";
+    display: inline-block;
+    margin-right:10px;
+    height: 30px;
+    width:30px;
+    background: url(../images/1.png);
+    background-size:cover;
+}
+.pentagon::before{
+    content: "";
+    display: inline-block;
+    margin-right:10px;
+    height: 25px;
+    width:25px;
+    background: url(../images/pentagon.png);
+    background-size:cover;
+}
+.what-is-jamstack{
+    padding-top: 120px;
+}
+.orange-circle{
+    height: 80px;
+    width: 80px;
+    background-color: var(--hover);
+}
+.mobile-users{
+    background: var(--jamstak-expert);
+}
+.static-website{
+    background: var(--jamstak);
+}
+.input-mail {
+    box-sizing: border-box;
+    padding: 18px 45px;
+    outline: 0px;
+    border: 0px;
+    width:100%;
+    padding-right:5%;
+    font-size: 1rem;
+    position: relative;
+    border-radius: 50px;
+}
+.subscribe-btn {
+    background-color: var(--logo-cl);
+    font-size: 1rem;
+    border: 1px solid var(--logo-cl);
+    box-sizing: border-box;
+    padding: 17px 45px;
+    margin:10px 0px 0px 0px;
+    cursor: pointer;
+    position:static;
+    border-radius: 50px;
+}
+.subscribe-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--jamstak-expert);
+    transition:all 2s ease;
+}
+.package-1{
+    box-sizing: border-box;
+    width:100%;
+    background-color:var(--jamstak-expert) ;
+    padding: 0px 25px;
+ }
+ .card-padding{
+     padding: 0px auto;
+ }
+ .inner-circle-1{
+    height: 80px;
+    width:80px;
+    background:var(--logo-cl);
+ }
+ .inner-circle{
+    height: 80px;
+    width:80px;
+    background:var(--hover);
+ }
+ .webj{
+    background: var(--jamstak);
+ }
+.case-study-text{
+    color: #f0022f !important;;
+}
+.blog-card{
+    box-sizing: border-box;
+    width:100%;
+    border: 2px solid var(--jamstak-expert);
+    padding-bottom: 10px;
+}
+@media  (min-width:992px){
+
+    .main-heading{
+        font-size: 4rem;
+    }
+    .section-heading{
+        font-size: 3.2rem;
+    }
+    .input-mail {
+        width:80%;
+    }
+    .subscribe-btn{
+        margin:0px 0px 0px 0px;
+        position: absolute;
+        left: 49%;
+       
+    }
+    .card-padding{
+        padding: 0px 20px;
+    }
+    .bg-blue{
+        background:linear-gradient(to right,var(--jamstak),var(--jamstak),var(--jamstak),var(--jamstak-expert),var(--jamstak-expert));
+    }
+    .jam-expert{
+        background:var(--jamstak-expert) ;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+}
+@media  (min-width:1200px){
+    .card-padding{
+        padding: 0px 60px;
+    }
+}
+
+
