@@ -3,6 +3,7 @@
     --hover:#ff3d00;
     --jamstak:#4767f6;
     --jamstak-expert:#eceef3;
+    --gray:#f1f2f6;
 }
 *{
     margin:0px;
@@ -39,11 +40,14 @@ header{
     background: var(--logo-cl);
 }
 .bg-blue{
-    background:var(--jamstak);
+    background:transparent;
 }
 .jam-expert{
     background:var(--jamstak-expert) ;
    
+}
+.bg-col-blue{
+    background:var(--jamstak);  
 }
 .red-box{
     height:40px;
@@ -66,9 +70,9 @@ button:hover{
 }
 .morden-technology-text::after{
     content: "";
-    width:3px;
+    width:1px;
     height:200px;
-    background: black;
+    background:var(--gray);
     display: block;
     position: absolute;
     left: 50%;
@@ -83,11 +87,11 @@ button:hover{
     
 }
 .solution-text{
-    margin-top:250px
+    margin-top:220px
 }
 .jamstak {
-    font-size: 3.8rem;
-    line-height: 5rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
     padding: 30px 14px 30px 20px;
 }
 .jamstack-expert{
@@ -108,7 +112,7 @@ button:hover{
     content: "";
     display: inline-block;
     margin-right:10px;
-    height: 30px;
+    height: 33px;
     width:30px;
     background: url(../images/1.png);
     background-size:cover;
@@ -150,25 +154,34 @@ button:hover{
 .subscribe-btn {
     background-color: var(--logo-cl);
     font-size: 1rem;
-    border: 1px solid var(--logo-cl);
+    border: 2px solid var(--logo-cl);
     box-sizing: border-box;
-    padding: 17px 45px;
+    padding: 16.5px 45px;
     margin:10px 0px 0px 0px;
     cursor: pointer;
     position:static;
     border-radius: 50px;
 }
 .subscribe-btn:hover{
-    background-color: transparent;
-    border: 1px solid var(--jamstak-expert);
+    background-color: var(--hover);
+    border: 2px solid var(--jamstak-expert);
     transition:all 2s ease;
 }
 .package-1{
     box-sizing: border-box;
     width:100%;
     background-color:var(--jamstak-expert) ;
-    padding: 0px 25px;
+    padding: 0px 30px;
  }
+ .package-1:hover{
+    transition: all 1s ease;
+    background-color:var(--jamstak) ;
+    color: var(--gray);
+ }
+.package-1:hover .know-more-text{
+    display: block;
+    background-color: transparent;
+}
  .card-padding{
      padding: 0px auto;
  }
@@ -177,25 +190,82 @@ button:hover{
     width:80px;
     background:var(--logo-cl);
  }
- .inner-circle{
-    height: 80px;
-    width:80px;
-    background:var(--hover);
- }
- .webj{
-    background: var(--jamstak);
- }
+.know-more-text{
+    position: absolute;
+    display: none;
+}
 .case-study-text{
     color: #f0022f !important;;
 }
+/* .faster:hover{
+    display: inline-block;
+    margin-right:10px;
+    height: 33px;
+    width:30px;
+    background: url(../images/1.png);
+    background-size:cover;
+} */
 .blog-card{
     box-sizing: border-box;
     width:100%;
     border: 2px solid var(--jamstak-expert);
     padding-bottom: 10px;
 }
+.blog-card:hover{
+    transition: all 1s ease;
+   box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.read-blog-text{
+    display:;
+    color: white;
+    font-weight: 700;
+}
+.blog-card:hover .read-blog-text{
+    transition:all 3s ease;
+    display: block;
+    color: black;
+}
+.openmenu{
+    display: none;
+}
+.mainmenu{
+    display: none;
+}
+.closemenu{
+    display: none;
+}
 @media  (min-width:992px){
-
+    .openmenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right:10px;
+        cursor: pointer;
+    }
+    .mainmenu{
+        display: none;
+    }
+    .mainmenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(to bottom, var(--jamstak),white);
+        transition: top 1s ease;
+        display: none;
+    }
+    .mainmenu .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right:10px;
+        cursor: pointer;      
+    }
     .main-heading{
         font-size: 4rem;
     }
@@ -211,6 +281,9 @@ button:hover{
         left: 49%;
        
     }
+    .bg-blue{
+        background:var(--jamstak);
+    }
     .card-padding{
         padding: 0px 20px;
     }
@@ -222,10 +295,15 @@ button:hover{
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
+    .jamstak {
+        font-size: 3.8rem;
+        line-height: 5rem;
+        padding: 30px 14px 30px 20px;
+    }
 }
 @media  (min-width:1200px){
     .card-padding{
-        padding: 0px 60px;
+        padding: 0px 20px;
     }
 }
 

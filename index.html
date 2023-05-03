@@ -7,7 +7,7 @@
         <title>digital presence</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/public-relations-3/48/Social_Media-256.png">
         <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/style.css">
@@ -24,7 +24,7 @@
                         <span  class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav justify-content-between">
+                        <ul class="navbar-nav d-flex align-items-center justify-content-between">
                           <li class="nav-item">
                             <a class="nav-link fw-medium" href="#">PRICING</a>
                           </li>
@@ -41,7 +41,23 @@
                             <a class="nav-link fw-medium"href="#">CONTACTUS</a>
                           </li>
                           <li class="nav-item">
-                            <img src="https://static.thenounproject.com/png/1614628-200.png" width="30px" height="40px">
+                            <div class="openmenu">
+                             <img src="https://static.thenounproject.com/png/1614628-200.png" width="30px" height="20px">
+                            </div>
+                            <div class="mainmenu " style="display: none; top:-100%;">
+                              <p class="fs-2 text-center text-white text-bg">
+                                In addition to the above packages, the Lorem Ipsum Company offers custom content marketing and digital
+                                 marketing packages, including video production, to fit any business no matter the size or industry.
+                                  We also offer concierge hosting services starting at $119 per month. With concierge hosting, you will receive 24/7 tech 
+                                  support as well as access to our full WordPress developer suite. Make changes to your site at any time at no additional cost. 
+                                  Concierge hosting also includes blog publishing services. SEO services are available at an additional charge.
+                              </p>
+                              <div class="closemenu">
+                                <span style='font-size:50px;'>&#10006;</span>
+                              </div>
+                            </div>
+
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -72,10 +88,11 @@
                 </div>
                 <div class="row solution-text">
                     <div class="col-12 col-lg-6 d-block mx-auto text-center">
+                      <div class="rounded-circle bg-dark mb-2 mx-auto" style="width:20px; height:20px;"></div>
                       <h1 class="fw-bold section-heading">
                         Your one stop solution in web reality
                       </h1>
-                      <button type="button" class="mt-3 px-5 py-3 text-white bg-red border-0"></button>
+                      <button type="button" class="mt-3 px-5 py-3 text-white bg-red border-0 rounded-pill">Get start</button>
 
                     </div>
                 </div>
@@ -86,7 +103,7 @@
         <section class="bg-blue">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-6 fw-semibold fs-1 text-white">
+              <div class="col-12 col-lg-6 fw-semibold fs-1 text-white bg-col-blue">
                 <p class="text-white jamstak">Jamstak+ , the leading brand that provides start to end solutions to all web problems</p>
               </div>
               <div class="col-12 col-lg-6 jam-expert ps-2 ps-lg-5">
@@ -213,14 +230,14 @@
             </div>
             <div class="row pt-5">
               <div class="col-12 col-md-6 col-lg-4 mx-auto mx-lg-0  color-primary card-padding">
-                  <div class="package-1 pb-4 mx-auto rounded-4 d-flex flex-column text-white webj">
+                  <div class="package-1 pb-4 mx-auto rounded-4 d-flex flex-column color-primary webj">
                       <h1 class="fs-2 pt-4 pb-3 fw-bold">webJ</h1>
                       <p class="fs-5">
                         the platform provides quick, secured, durable and easily managable digital presence that is uniquely tailored
                         with popular tech stack by decoupling frontend and backend responsibilities.
                       </p>
                       <div class="inner-circle-1 rounded-circle align-self-end mt-5 position-relative">
-                        <p class="position-absolute top-50 translate-middle" style="width: 120px;">Know More</p>
+                        <p class="top-50 translate-middle know-more-text" style="width: 120px;">Know More</p>
                       </div>
                   </div>
               </div>
@@ -231,7 +248,9 @@
                         the platform provides quick, secured, durable and easily managable digital presence that is uniquely tailored
                         with popular tech stack by decoupling frontend and backend responsibilities.
                       </p>
-                      <div class="inner-circle rounded-circle align-self-end mt-5"></div>
+                      <div class="inner-circle-1 rounded-circle align-self-end mt-5 position-relative">
+                        <p class="top-50 translate-middle know-more-text" style="width: 120px;">Know More</p>
+                      </div>
                   </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4 mx-auto mx-lg-0  color-primary mt-4 mt-lg-0 card-padding ">
@@ -241,7 +260,9 @@
                         the platform provides quick, secured, durable and easily managable digital presence that is uniquely tailored
                         with popular tech stack by decoupling frontend and backend responsibilities.
                       </p>
-                      <div class="inner-circle rounded-circle align-self-end mt-5"></div>
+                      <div class="inner-circle-1 rounded-circle align-self-end mt-5 position-relative">
+                        <p class="top-50 translate-middle know-more-text" style="width: 120px;">Know More</p>
+                      </div>
                   </div>
               </div>
           </div>
@@ -258,65 +279,65 @@
               </div>
               <div class="col-12 col-lg-7">
                 <div class="row">
-                  <div class="col-12 border-top border-dark ">
+                  <div class="col-12 border-top border-dark-subtle ">
                     <div class="row">
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3 d-flex justify-content-center align-ite">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3 d-flex justify-content-center align-ite">
                         <img src="assets/images/adobe.jpg" width="130px" height="70px">
                       </div>
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/2560px-Stripe_Logo,_revised_2016.svg.png" width="130px" height="80px">
                       </div>
-                      <div class="col-6 col-sm-4 border-dark text-center py-3 d-flex justify-content-center align-items-center mx-auto">
+                      <div class="col-6 col-sm-4 border-dark-subtle text-center py-3 d-flex justify-content-center align-items-center mx-auto">
                         <img src="assets/images/Netflix_2015_logo.svg.png" width="130px" height="50px">
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 border-top border-dark ">
+                  <div class="col-12 border-top border-dark-subtle ">
                     <div class="row">
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3 d-flex justify-content-center align-items-center">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/2560px-CBRE_Group_logo.svg.png" width="120px" height="60px">
                       </div>
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3 d-flex justify-content-center align-items-center">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/Mozilla_logo.svg.png" width="120px" height="60px">
                       </div>
-                      <div class="col-6 col-sm-4 border-dark text-center py-3 d-flex justify-content-center align-items-center mx-auto">
+                      <div class="col-6 col-sm-4 border-dark-subtle text-center py-3 d-flex justify-content-center align-items-center mx-auto">
                         <img src="assets/images/2560px-Okta_logo.svg.png" width="120px" height="80px">
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 border-top border-dark ">
+                  <div class="col-12 border-top border-dark-subtle ">
                     <div class="row">
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/opera-logo-transparent-background-11660773639a9jk49hrhw.png" width="120px" height="80px" >
                       </div>
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/Oppo-Logo.wine.png" width="120px" height="80px">
                       </div>
-                      <div class="col-6 col-sm-4 border-dark text-center py-3 d-flex justify-content-center align-items-center mx-auto">
+                      <div class="col-6 col-sm-4 border-dark-subtle text-center py-3 d-flex justify-content-center align-items-center mx-auto">
                         <img src="assets/images/NBCUniversal_Logo.svg.png" width="120px" height="60px">
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 border-top border-dark ">
+                  <div class="col-12 border-top border-dark-subtle ">
                     <div class="row">
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/Turo-logo.jpg" width="120px" height="80px">
                       </div>
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/6334547adb243bbd38370f25_Clearbit.png" width="120px" height="80px">
                       </div>
-                      <div class="col-6 col-sm-4 border-dark text-center py-3 mx-auto">
+                      <div class="col-6 col-sm-4 border-dark-subtle text-center py-3 mx-auto">
                         <img src="assets/images/Crunchbase-Logo.wine.png" width="120px" height="80px">
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 border-top border-dark border-bottom ">
+                  <div class="col-12 border-top border-dark-subtle border-bottom ">
                     <div class="row">
-                      <div class="col-6 col-sm-4 border-end border-dark text-center py-3">
+                      <div class="col-6 col-sm-4 border-end border-dark-subtle text-center py-3">
                         <img src="assets/images/download (1).png" width="80px" height="80px">
                       </div>
-                      <div class="col-6 col-sm-8 fs-1 fw-bold border-dark text-center d-flex justify-content-center align-items-center">
-                       <p> contact us</p> 
+                      <div class="col-6 col-sm-8 fs-1 border-dark-subtle text-center d-flex justify-content-center align-items-center">
+                       <p class="m-0" style="font-weight: 800;"> Contact us</p> 
                       </div>
                     </div>
                   </div>
@@ -354,17 +375,19 @@
                 <div class="col-12">
                   <h2 class="fw-bold section-heading  pb-4 ">Case Study</h2>
                 </div>
-                <div class="col-12 col-lg-4">
-                  <h3 class="square fs-2 fw-bold pb-1  ps-0 ps-lg-3">
-                    faster to deliverack
-                  </h3>
-                  <h3 class="fs-2 text-secondary  pb-1 ps-0 ps-lg-5 ms-0 ms-lg-3">
+                <div class="col-12 col-lg-4 ">
+                  <div>
+                    <h3 class="fs-2 fw-bold square pb-1 ps-0 ps-lg-3 faster d-block">
+                      faster to deliverack
+                    </h3>
+                  </div>
+                  <h3 class="fs-2 text-secondary  pb-1 ps-0 ps-lg-5 ms-0 ms-lg-3 faster d-block">
                     Logic Tales
                   </h3>
-                  <h3 class="fs-2 text-secondary  pb-1 ps-0 ps-lg-5 ms-0 ms-lg-3">
+                  <h3 class="fs-2 text-secondary  pb-1 ps-0 ps-lg-5 ms-0 ms-lg-3 faster d-block">
                     Intercollab
                   </h3>
-                  <h3 class="fs-2 text-secondary ps-0 ps-lg-5 ms-0 ms-lg-3">
+                  <h3 class="fs-2 text-secondary ps-0 ps-lg-5 ms-0 ms-lg-3 faster d-block">
                     Skype
                   </h3>
                 </div>
@@ -430,13 +453,13 @@
                     </div>
                   </div>
                   
-                    <div class="p-5 pb-3 mb-5 d-lg-flex shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="p-5 pb-3 mb-5 d-lg-flex shadow p-3 mb-5 bg-body-tertiary rounded ">
                       <div class="me-2">
                         <img src="assets/images/Customer-2.png" alt="customers" width="150px" height="150px">
                       </div>
                       <div class="ps-3">
                         <p class="fs-4 fw-bold"> Our team has hands on on the mordern and trendy tools with great knowledge of choosing them wisely</p>
-                        <p class="fs-4 fw-bold">--kaylynn kenter</p>
+                        <p class="fs-4 fw-bold">--kianna Franci</p>
                       </div>
                   </div>
                   
@@ -447,7 +470,7 @@
                       </div>
                       <div class="ps-3">
                         <p class="fs-4 fw-bold"> Our team has hands on on the mordern and trendy tools with great knowledge of choosing them wisely</p>
-                        <p class="fs-4 fw-bold">--kaylynn kenter</p>
+                        <p class="fs-4 fw-bold">--Ryan Lipshutz</p>
                       </div>
                   </div>
                   
@@ -470,29 +493,32 @@
             <div class="row pt-5">
               <div class="col-12 col-md-6 col-lg-4 mx-auto mx-lg-0  color-primary card-padding">
                   <div class="pb-5 mx-auto rounded-4 d-flex flex-column blog-card ">
-                    <img src="assets/images/termind.jpg" width="100%" height="50%" class="rounded-top">
+                    <img src="assets/images/termind.jpg" width="100%" height="274px" class="rounded-top">
                       <h1 class="fs-2 pt-4 pb-3 fw-bold px-4">Termgrid</h1>
                       <p class="fs-6  px-4">
                         Branding a whole new category of debt management.
                       </p>
+                      <p class="read-blog-text px-4">Read Blog &rarr;</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4 mx-auto mx-lg-0  color-primary mt-4 mt-md-0 card-padding">
-                  <div class="pb-4 mx-auto d-flex flex-column rounded-4 blog-card mobile-users shadow  mb-5 bg-body-tertiary">
-                    <img src="assets/images/crisp.jpg" width="100%" height="50%" class="rounded-top">
+                  <div class="pb-5 mx-auto d-flex flex-column rounded-4 blog-card">
+                    <img src="assets/images/crisp.jpg" width="100%" height="274px" class="rounded-top">
                       <h1 class="fs-2 pt-4 pb-3 fw-bold px-4">Crisp</h1>
                       <p class="fs-6  px-4">
                         Designing a new mobile experience for the all-in-one messaging platform.
                       </p>
+                      <p class="read-blog-text px-4">Read Blog &rarr;</p>
                   </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4 mx-auto mx-lg-0  color-primary mt-4 mt-lg-0 card-padding ">
                   <div class="pb-5 mx-auto d-flex flex-column rounded-4 blog-card ">
-                      <img src="assets/images/ternary.jpg" width="100%" height="50%" class="rounded-top">
+                      <img src="assets/images/ternary.jpg" width="100%" height="274px" class="rounded-top">
                       <h1 class="fs-2 pt-4 pb-3 fw-bold px-4">Ternary</h1>
                      <p class="fs-6  px-4">
                       Creating a visual identity and product for FinOps cloud innovator.
                      </p>
+                     <p class="read-blog-text px-4">Read Blog &rarr;</p>
                   </div>
               </div>
           </div>
