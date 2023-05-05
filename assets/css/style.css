@@ -3,7 +3,7 @@
     --hover:#ff3d00;
     --jamstak:#4767f6;
     --jamstak-expert:#eceef3;
-    --gray:#f1f2f6;
+    --gray:#cbccd1;
 }
 *{
     margin:0px;
@@ -77,10 +77,11 @@ button:hover{
     position: absolute;
     left: 50%;
     transform: translate(50%, 10%);
-    background-image: url(../images/circle.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+}
+.black-dot{
+    position:absolute;
+    left: 50%;
+    transform: translate(-42%, 10%);
 }
 .one-stop-solution{
     padding-bottom: 120px;
@@ -174,7 +175,7 @@ button:hover{
     padding: 0px 30px;
  }
  .package-1:hover{
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     background-color:var(--jamstak) ;
     color: var(--gray);
  }
@@ -197,31 +198,39 @@ button:hover{
 .case-study-text{
     color: #f0022f !important;;
 }
-/* .faster:hover{
+.square-2::before{
+    content: "";
     display: inline-block;
     margin-right:10px;
     height: 33px;
     width:30px;
     background: url(../images/1.png);
     background-size:cover;
-} */
+    display: none;
+}
+.faster:hover{
+    color: var(--gray);
+}
+.faster:hover .square-2::before{
+    display: block;
+}
 .blog-card{
     box-sizing: border-box;
     width:100%;
     border: 2px solid var(--jamstak-expert);
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .blog-card:hover{
-    transition: all 1s ease;
+    transition: all 0.5s ease;
    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .read-blog-text{
-    display:;
     color: white;
     font-weight: 700;
 }
 .blog-card:hover .read-blog-text{
-    transition:all 3s ease;
+    transition:all 0.8s ease;
     display: block;
     color: black;
 }
@@ -233,6 +242,22 @@ button:hover{
 }
 .closemenu{
     display: none;
+}
+.text-bg{
+    display: none;
+}
+.hover-square{
+    display: none;
+}
+.customers-div{
+    border: 1px solid var(--gray);
+}
+.customers-div:hover{
+    transition: all 0.2s ease;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.customers-div:hover .hover-square{
+    display: block;
 }
 @media  (min-width:992px){
     .openmenu {
@@ -246,11 +271,11 @@ button:hover{
         display: none;
     }
     .mainmenu {
+        width: 50vw;
         height: 100vh;
         position: fixed;
         top: 0px;
         right: 0px;
-        left: 0px;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
@@ -265,6 +290,9 @@ button:hover{
         top: 20px;
         right:10px;
         cursor: pointer;      
+    }
+    .text-bg{
+        display: block;
     }
     .main-heading{
         font-size: 4rem;

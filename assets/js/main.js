@@ -14,3 +14,5 @@ const mainmenu = document.querySelector('.mainmenu');
 			function close(){
 				mainmenu.style.top ='-100%';
 			}
+
+			
