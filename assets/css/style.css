@@ -1,17 +1,17 @@
 :root{
+
+    /* colors-variable */
     --logo-cl:#f0022f ;
     --hover:#ff3d00;
     --jamstak:#4767f6;
     --jamstak-expert:#eceef3;
     --gray:#cbccd1;
-}
-*{
-    margin:0px;
-    padding: 0px;
-}
-body{
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    --dark:#000000;
+    --white:#ffffff;
+
+    /* spacing-variables */
+    --margin-top:220px;
+    --padding-bottom:120px;
 }
 @font-face {
     font-family: open-sans;
@@ -33,13 +33,24 @@ body{
     src: url(../fonts/OpenSans-Bold.ttf);
     font-weight: 700;
 }
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+button:hover{
+    background-color: var(--hover);
+ }
 header{
     padding: 40px 0px 120px 0px;
 }
-.bg-red{
+.background-primary{
     background: var(--logo-cl);
 }
-.bg-blue{
+.background-secondary{
     background:transparent;
 }
 .jam-expert{
@@ -58,9 +69,6 @@ header ul{
 }
 .main-heading{
     font-size: 3rem;
-}
-button:hover{
-   background-color: var(--hover);
 }
 .section-heading{
     font-size: 2rem;
@@ -84,11 +92,11 @@ button:hover{
     transform: translate(-42%, 10%);
 }
 .one-stop-solution{
-    padding-bottom: 120px;
+    padding-bottom: var(--padding-bottom);
     
 }
 .solution-text{
-    margin-top:220px
+    margin-top:var(--margin-top);
 }
 .jamstak {
     font-size: 2.5rem;
@@ -208,8 +216,11 @@ button:hover{
     background-size:cover;
     display: none;
 }
-.faster:hover{
+.faster{
     color: var(--gray);
+}
+.faster:hover{
+    color: var(--dark);
 }
 .faster:hover .square-2::before{
     display: block;
@@ -224,9 +235,10 @@ button:hover{
 .blog-card:hover{
     transition: all 0.5s ease;
    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background:linear-gradient(var(--jamstak-expert),var(--jamstak-expert));
 }
 .read-blog-text{
-    color: white;
+    color: var(--white);
     font-weight: 700;
 }
 .blog-card:hover .read-blog-text{
@@ -255,6 +267,7 @@ button:hover{
 .customers-div:hover{
     transition: all 0.2s ease;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background:linear-gradient(var(--jamstak-expert),var(--jamstak-expert));
 }
 .customers-div:hover .hover-square{
     display: block;
@@ -280,7 +293,7 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background:linear-gradient(to bottom, var(--jamstak),white);
+        background:linear-gradient(to bottom, var(--jamstak),var(--white));
         transition: top 1s ease;
         display: none;
     }
@@ -309,13 +322,13 @@ button:hover{
         left: 49%;
        
     }
-    .bg-blue{
+    .background-secondary{
         background:var(--jamstak);
     }
     .card-padding{
         padding: 0px 20px;
     }
-    .bg-blue{
+    .background-secondary{
         background:linear-gradient(to right,var(--jamstak),var(--jamstak),var(--jamstak),var(--jamstak-expert),var(--jamstak-expert));
     }
     .jam-expert{
